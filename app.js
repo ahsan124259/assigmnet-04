@@ -26,7 +26,7 @@ meals.forEach(meal=>{
         <h1 class="text-2xl">${meal.strMeal}</h1>
         <p>${meal.strInstructions.slice(0,200)}</p>
         </div>
-        <button class="text-2xl border text-center px-1 text-blue-600">Details more</button> 
+        <button class=" border text-center px-1 text-blue-600">Details more</button> 
     </div>
     
     `;
@@ -52,16 +52,7 @@ const search = () =>{
     const searchText = searchField.value;
     loadPhones(searchText);
 }
-document.getElementById('btn-search').addEventListener('click', function(){
-    
-    search(10);
-})
 
-document.getElementById('search-box').addEventListener('keypress', function (e) {
-    if (e.key === 'enter') {
-        search();
-    }
-});
 
 const toggleSpinner=(isLoading)=>{
     const loaderSection=document.getElementById('loader-spiner')

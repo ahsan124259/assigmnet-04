@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assigmnet-04</title>
+    <title>Dom-Food Meal</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
 </head>
 <body>
     <head>
-        <h1 class="text-3xl underline">wellcome to my food meal</h1>
+        <h1 class="text-3xl text-center mt-10 text-blue-600 undeline ">Well come to my food meal</h1>
     </head>
     <main>
         <div id="loader-spiner" class="hidden flex mx-auto w-full ">
                 <div class="w-10 h-10 border-4 border-blue-500 rounded-full animate-spin" src="" alt="">Loading</div>
             </div>
         <!-- search field -->
-         
-         <div class="search-container" class="mt-5 mb-5 ">
+         <div class="search-container" class="m-10">
             <input
-             class=" text-red-600 border-solid" 
+             class=" text-red-600 border-solid border" 
              type="search"
               name="" 
               id="search-box"
-               placeholder="search">
+               placeholder="search....">
            
             <button onclick="handleSearch()" 
-            class="text-blue-600 font-bold " 
+            class="text-blue-600 font-bold border " 
             id="btn-search">Search</btn>
          </div>
          
 
         <!-- display container -->
             
-         <section>  
+         <section class="mt-10">  
             <div id="meal-container" class="sm:grid grid-cols-1 md:grid grid-cols-3 gap-4 ">
             </div>
          </section>
